@@ -1,7 +1,4 @@
-Ad-automation-readme
-🔐 AD User Disable/Enable Automation
-
-![AD Icon](data:image/svg+xml;utf8,)
+🔐 AyeAD — AD User Disable/Enable Automation
 
 Purpose: Serverless automation to read employee exit/revoke lists from Google Sheets, save a copy to S3, and enable/disable users in Active Directory via LDAP (NTLM). Sends summary notifications via SNS.
 
