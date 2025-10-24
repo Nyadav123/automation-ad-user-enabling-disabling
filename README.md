@@ -1,4 +1,4 @@
-🔐 AyeAD — AD User Disable/Enable Automation
+🔐 AD User Disable/Enable Automation
 
 Purpose: Serverless automation to read employee exit/revoke lists from Google Sheets, save a copy to S3, and enable/disable users in Active Directory via LDAP (NTLM). Sends summary notifications via SNS.
 
@@ -52,6 +52,6 @@ The latest unique rows per employee ID are computed; rows with invalid/unparseab
 
 A spreadsheet snapshot is uploaded to S3 for audit.
 
-For each ID, the AD helper (AyeADAP) binds to AD via NTLM over LDAPS (port 636) and sets userAccountControl bits to disable or enable accounts.
+For each ID, the AD helper (ADAP) binds to AD via NTLM over LDAPS (port 636) and sets userAccountControl bits to disable or enable accounts.
 
 At the end a summary SNS message is published listing disabled, enabled and invalid IDs.
